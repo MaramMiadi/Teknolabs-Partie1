@@ -1,2 +1,5 @@
 ---
-# TODO : handler "restart app" (redémarrage du process PM2)
+- name: restart app
+  command: pm2 restart {{ app_name }}
+  become: true
+  become_user: "{{ deploy_user }}"
