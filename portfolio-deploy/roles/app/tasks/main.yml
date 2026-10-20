@@ -12,8 +12,8 @@
 
 - name: Install npm dependencies
   community.general.npm:
-    path: "{{ app_dir }}"
-    ci: true
+    path: "{{ app_dir }}/nextjs-cv"
+    state: present
   become: true
   become_user: "{{ app_user }}"
   when: app_git_result.changed
@@ -21,7 +21,7 @@
 - name: Build application
   ansible.builtin.command:
     cmd: npm run build
-    chdir: "{{ app_dir }}"
+    chdir: "{{ app_dir }}/nextjs-cv"
   become: true
   become_user: "{{ app_user }}"
   when: app_git_result.changed
