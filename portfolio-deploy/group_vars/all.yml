@@ -7,3 +7,4 @@ app_user: "deploy"
 app_port: 3000
 node_major: 20
 server_name: "portfolio.local"
+app_repo_subdir: "nextjs-cv"
