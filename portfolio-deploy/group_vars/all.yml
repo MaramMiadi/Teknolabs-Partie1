@@ -1,6 +1,6 @@
 ---
 # TODO : adapter ces valeurs
-app_repo: "https://github.com/MaramMiadi/Teknolabs-Partie1"
+app_repo: "https://github.com/MaramMiadi/Teknolabs-Partie1.git"
 app_version: "main"
 app_dir: "/opt/portfolio"
 app_user: "deploy"
